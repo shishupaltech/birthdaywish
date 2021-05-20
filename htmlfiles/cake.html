@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cake</title>
+    <!-- <source src="mj.mp3" type="audio/mpeg"> -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            color:crimson;
+            font-size: large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+           
+            background-color: rgb(39, 202, 202);
+            
+            
+        }
+        img{
+            position: relative;
+            top: 55px;
+            background-size: cover;
+            height: 70vh;
+        }
+        #box{
+            position:relative;
+            top: 55px;
+            left: 170px;
+        }
+
+        #box ul li a {
+            list-style: none;
+            text-decoration: none;
+        }
+        #wish{
+            position:absolute;
+            top: 590px;
+            left: 1390px;
+            color: rgb(238, 234, 223);
+            background-color: rgb(0, 0, 0);
+            padding: 15px 15px;
+            border-radius: 30px;
+            
+        }
+       
+        @media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(39, 202, 202);
+  }
+  img{
+      position: relative;
+      top: 100px;
+      left: 65px;
+      height: 50vh;
+      width: 50vh;
+  }
+  #box{
+      position: relative;
+      top: 95px;
+      left: 160px;
+  }
+  
+ #wish{
+     position: relative;
+     
+     left:-185px;
+     top: 400px;
+     padding: 12px 50px;
+ }
+ 
+}
+</style>
+</head>
+<body>
+    <ul >
+        <li id="box"><a href="">Cute The Cake(Touch)</a></li>
+        <li id="myname1" onclick="play()">
+            
+                <img src="../images/cake.png" alt="giftbox" id="music" >
+          
+        </li>
+        
+    </ul>
+    
+    <li id="wish"><a href="../htmlfiles/index.html" id="myname" onclick="puase()">Wish for you</a></li>
+    
+    <script>
+    var myid = new Audio("../htmlfiles/wish_you_birthday.mp3");
+    document.getElementById("myname1").addEventListener("click",play = ()=>{
+        myid.play();
+    })
+   
+     
+      document.getElementById("myname").addEventListener("click",puase =() =>{
+          myid.puase();
+      })
+    
+ 
+    // myid.pause();
+    </script>
+</body>
+</html>

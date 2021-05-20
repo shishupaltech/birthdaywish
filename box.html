@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            color:crimson;
+            font-size: large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+           
+            background-color: rgb(39, 202, 202);
+            
+        }
+        img{
+            position: relative;
+            top: 55px;
+            background-size: cover;
+            height: 80vh;
+        }
+        #box{
+            position:relative;
+            top: 55px;
+            left: 200px;
+        }
+        #box ul li a {
+            list-style: none;
+            text-decoration: none;
+        }
+        @media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(39, 202, 202);
+  }
+  img{
+      position: relative;
+      top: 100px;
+      height: 50vh;
+      width: 50vh;
+  }
+  #box{
+      position: relative;
+      top: 95px;
+      left: 100px;
+  }
+ 
+}
+    </style>
+    
+</head>
+<body>
+    <ul>
+        <li id="box"><a href="./cake">Open GiftBox</a></li>
+        <a href="./htmlfiles/cake.html">
+            <img src="./images/boxxx.png" alt="giftbox">
+        </a>
+    </ul>
+    
+</body>
+</html>
